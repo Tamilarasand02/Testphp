@@ -8,11 +8,11 @@ RUN docker-php-ext-install pgsql pdo_pgsql
 RUN a2enmod rewrite
 
 # Set environment variables for PostgreSQL
-ENV DB_HOST=your-postgresql-host
+ENV DB_HOST=samplephp.postgres.database.azure.com
 ENV DB_PORT=5432
-ENV DB_NAME=your_database_name
-ENV DB_USER=your_db_user
-ENV DB_PASSWORD=your_db_password
+ENV DB_NAME=samplephp
+ENV DB_USER=qwerty
+ENV DB_PASSWORD=Tamil@002
 
 # Copy the PHP application into the container
 COPY src/ /var/www/html/
