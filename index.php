@@ -1,10 +1,10 @@
 <?php
 // Database connection parameters
-$host = 'your-postgresql-host';
+$host = 'samplephp.postgres.database.azure.com';
 $port = '5432'; // Default PostgreSQL port
-$dbname = 'your_database_name';
-$user = 'your_db_user';
-$password = 'your_db_password';
+$dbname = 'samplephp';
+$user = 'qwerty';
+$password = 'Tamil@002';
 
 // Create a connection to the PostgreSQL database
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
