@@ -1,10 +1,10 @@
 <?php
 // Database connection parameters
-$host = '34.174.37.121';
-$port = '5432'; // Default PostgreSQL port
-$dbname = 'basicdetails';
-$user = 'postgres';
-$password = '12qwaszx';
+$host = getenv('DB_HOST');
+$port = getenv('DB_PORT');
+$dbname = getenv('DB_NAME');
+$user = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
 
 // Create a connection to the PostgreSQL database
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
